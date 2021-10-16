@@ -9,13 +9,14 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainNewPost.css">
     <title>new post</title>
 </head>
 <body>
 <div class="container">
     <div class="article">
         <form method="post" class="newForm">
+            <h2>Just add new post!</h2>
             <input type="text" name="titleArticle" class="title" placeholder="Title">
             <textarea name="contentArticle" id="" cols="30" rows="10"></textarea>
             <input type="text" name="articleAuthor" class="title" placeholder="Author">

@@ -11,4 +11,12 @@
 <!--        <servlet-name>NewPost</servlet-name>-->
 <!--        <url-pattern>/new-post</url-pattern>-->
 <!--    </servlet-mapping>-->
+    <servlet>
+        <servlet-name>NewsPage</servlet-name>
+        <jsp-file>/news.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsPage</servlet-name>
+        <url-pattern>/news-page</url-pattern>
+    </servlet-mapping>
 </web-app>
