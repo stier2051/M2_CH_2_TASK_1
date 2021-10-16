@@ -1,0 +1,31 @@
+body, p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div, p, form, input, a, span, button, textarea {
+    box-sizing: border-box;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+input, select {
+    padding: 10px;
+}
+
+.article {
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.submit {
+    width: 80px;
+}
