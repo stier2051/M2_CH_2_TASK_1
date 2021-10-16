@@ -30,18 +30,18 @@
                 </div>
                 <div class="col-lg-5">
                     <ul class="nav">
-                        <li class="nav-item"><a href="#" class="nav-link">All News</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Culture News</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sport News</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Cinema News</a></li>
+                        <li class="nav-item"><a href="allnews" class="nav-link">All News</a></li>
+                        <li class="nav-item"><a href="culture" class="nav-link">Culture News</a></li>
+                        <li class="nav-item"><a href="sport" class="nav-link">Sport News</a></li>
+                        <li class="nav-item"><a href="cinema" class="nav-link">Cinema News</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 ms-auto text-end">
+                    <a href="newpost" class="search__button">Add news</a>
                     <input type="text" placeholder="Search" class="search__input">
                     <a href="#" class="search__button">Search</a>
                 </div>
             </div>
-
         </div>
     </header>
     <div class="content">

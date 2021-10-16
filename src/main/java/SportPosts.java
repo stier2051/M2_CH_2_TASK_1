@@ -5,14 +5,12 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "allnews", value = "/allnews")
-public class AllNews extends HttpServlet {
-
+@WebServlet(name = "SportPosts", value = "/sport")
+public class SportPosts extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         DBManager.connectToDb();
-        request.setAttribute("posts", DBManager.getAllPosts());
+        request.setAttribute("posts", DBManager.getSportPosts());
         request.getRequestDispatcher("/news.jsp").forward(request, response);
     }
 

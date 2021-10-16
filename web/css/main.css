@@ -1,31 +1,112 @@
-body, p {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-div, p, form, input, a, span, button, textarea {
-    box-sizing: border-box;
+a {
+  text-decoration: none;
 }
 
-input, textarea, select {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 20px;
-    letter-spacing: 0.1em;
+/* heading */
+
+.heading {
+  background-color: #254a57;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff !important;
+}
+
+.nav-item {
+  font-size: 16px;
+}
+
+.nav-link {
+  color: #778e97;
+  padding: 6px;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.search__input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search__button {
+  border: 1px solid white;
+  padding: 5px 10px;
+  color: #fff !important;
+  border-radius: 5px;
+}
+
+/* content */
+
+.article__title {
+  font-size: 24px;
+}
+
+.article__item {
+  padding: 30px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.article__text, .article__author {
+  color: #999ca0;
+}
+
+.article__author span {
+  color: #000;
+  font-weight: bold;
+}
+
+/* footer */
+.footer {
+  background-color: #254a57;
+  padding: 20px 0;
+  color: #b8bbbd;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+/*new post*/
+.newForm input, textarea, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  background-color: #e9ecef;
+}
+
+.content {
+  margin: 10px auto;
+  background-color: #e9ecef;
 }
 
 input, select {
-    padding: 10px;
+  padding: 10px;
 }
 
 .article {
-    width: 600px;
-    margin: auto;
-    margin-top: 50px;
+  width: 600px;
+  /*margin: auto;*/
+  margin-top: 50px;
 }
 
 .submit {
-    width: 80px;
+  width: 80px;
 }

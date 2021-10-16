@@ -53,4 +53,58 @@ public class DBManager {
         }
         return posts;
     }
+
+    public static ArrayList<Post> getCulturePosts() {
+        ArrayList<Post> posts = new ArrayList<>();
+        try{
+            PreparedStatement st = conn.prepareStatement("select * from news where category = 'culture'");
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                String postTitle = rs.getString("title");
+                String postContent = rs.getString("content");
+                String postAuthor = rs.getString("author");
+                String postCategory = rs.getString("category");
+                posts.add(new Post(postTitle, postContent, postAuthor, postCategory));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return  posts;
+    }
+
+    public static ArrayList<Post> getSportPosts() {
+        ArrayList<Post> posts = new ArrayList<>();
+        try{
+            PreparedStatement st = conn.prepareStatement("select * from news where category = 'sport'");
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                String postTitle = rs.getString("title");
+                String postContent = rs.getString("content");
+                String postAuthor = rs.getString("author");
+                String postCategory = rs.getString("category");
+                posts.add(new Post(postTitle, postContent, postAuthor, postCategory));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return  posts;
+    }
+
+    public static ArrayList<Post> getCinemaPosts() {
+        ArrayList<Post> posts = new ArrayList<>();
+        try{
+            PreparedStatement st = conn.prepareStatement("select * from news where category = 'cinema'");
+            ResultSet rs = st.executeQuery();
+            while (rs.next()) {
+                String postTitle = rs.getString("title");
+                String postContent = rs.getString("content");
+                String postAuthor = rs.getString("author");
+                String postCategory = rs.getString("category");
+                posts.add(new Post(postTitle, postContent, postAuthor, postCategory));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return  posts;
+    }
 }
