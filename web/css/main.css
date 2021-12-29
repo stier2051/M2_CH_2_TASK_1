@@ -92,12 +92,7 @@ a {
   background-color: #e9ecef;
 }
 
-.content {
-  margin: 10px auto;
-  background-color: #e9ecef;
-}
-
-input, select {
+input, select, textarea {
   padding: 10px;
 }
 

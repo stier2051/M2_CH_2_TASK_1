@@ -9,41 +9,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-    <!-- Bootstrap Reboot CSS -->
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>Title</title>
+    <%@include file="head.jsp"%>>
 </head>
 <body>
 <div class="container">
-    <header class="header">
-        <div class="heading">
-            <div class="row justify-content-start align-items-center">
-                <div class="col-lg-2">
-                    <a href="#" class="logo">
-                        NEWS.COM
-                    </a>
-                </div>
-                <div class="col-lg-5">
-                    <ul class="nav">
-                        <li class="nav-item"><a href="allnews" class="nav-link">All News</a></li>
-                        <li class="nav-item"><a href="culture" class="nav-link">Culture News</a></li>
-                        <li class="nav-item"><a href="sport" class="nav-link">Sport News</a></li>
-                        <li class="nav-item"><a href="cinema" class="nav-link">Cinema News</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 ms-auto text-end">
-                    <a href="newpost" class="search__button">Add news</a>
-                    <input type="text" placeholder="Search" class="search__input">
-                    <a href="#" class="search__button">Search</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <%@include file="header.jsp"%>
     <div class="content">
         <div class="row">
             <div class="col">
@@ -68,6 +38,46 @@
         </div>
     </div>
 </div>
-</body>
+
+<!-- Modal add new post -->
+<div class="modal fade" id="addNewPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/main" method="post">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Title</span>
+                        <input type="text" name="postTitle" class="form-control">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span>Content</span>
+                        <textarea name="postContent" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Author</span>
+                        <input type="text" name="postAuthor" class="form-control">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Category</span>
+                        <select name="postCategory" class="form-select">
+                            <option value="culture">culture</option>
+                            <option value="sport">sport</option>
+                            <option value="cinema">cinema</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Add post</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

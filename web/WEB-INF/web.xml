@@ -3,24 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <display-name>Java</display-name>
     <welcome-file-list>
-        <welcome-file>allnews</welcome-file>
+        <welcome-file>main</welcome-file>
     </welcome-file-list>
-<!--    <servlet>-->
-<!--        <servlet-name>NewPost</servlet-name>-->
-<!--        <jsp-file>/newPost.jsp</jsp-file>-->
-<!--    </servlet>-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>NewPost</servlet-name>-->
-<!--        <url-pattern>/new-post</url-pattern>-->
-<!--    </servlet-mapping>-->
-    <servlet>
-        <servlet-name>NewsPage</servlet-name>
-        <jsp-file>/news.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>NewsPage</servlet-name>
-        <url-pattern>/news-page</url-pattern>
-    </servlet-mapping>
 </web-app>
